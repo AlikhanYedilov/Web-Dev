@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+        <style>
+            body {
+                background-color: rgb(30, 30, 30);
+                font-family: sans-serif;
+                line-height: 1.6;
+                color: rgb(220, 220, 220);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                min-height: 100vh;
+                margin: 0;
+            }
+            .container {
+                width: 60%;
+                background: rgb(40, 40, 40);
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                text-align: center;
+            }
+            h1 {
+                background-color: rgb(50, 50, 50); 
+                color: white;
+                padding: 15px;
+                border-radius: 5px;
+            }
+            h2 {
+                color: rgb(0, 150, 200);
+                border-bottom: 2px solid rgb(0, 150, 200);
+                padding-bottom: 5px;
+            }
+            h6 {
+                color: rgb(180, 180, 180);
+                font-size: 0.9em;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            ul li a {
+                color: rgb(0, 150, 200);
+                font-weight: bold;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            ul li a:hover {
+                color: rgb(255, 180, 0);
+            }
+            img {
+                width: 50%;
+                border-radius: 8px;
+                margin: 15px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Aliko's Blog</h1>
+
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#first-post">First Post</a></li>
+                <li><a href="#second-post">Second Post</a></li>
+            </ul>
+            
+            <h2 id="first-post">First Post</h2>
+            <h6>Posted on 29.01.25</h6>
+            <img src="https://images.pexels.com/photos/4439450/pexels-photo-4439450.jpeg?auto=compress&cs=tinysrgb&w=600" alt="intro">
+            <p>Hey my name is Aliko.</p>
+            
+            <h2 id="second-post">Second Post</h2>
+            <h6>Posted on 29.01.25</h6>
+            <img src="https://images.pexels.com/photos/2882670/pexels-photo-2882670.jpeg?auto=compress&cs=tinysrgb&w=600" alt="html and css">
+            <p>HTML and CSS.</p>
+        </div>
+    </body>
+</html>
