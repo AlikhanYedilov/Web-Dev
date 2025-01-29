@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: #fff;
+            color: #000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: #f4f4f4;
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: url('hero.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero .info-box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .hero .info-box h2 {
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0078D4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #005A9E;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 5%;
+        }
+        .product-card {
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><img src="microsoft logo.png" alt="Microsoft" width="100"></li>
+            <li><a href="#">Microsoft 365</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Copilot</a></li>
+            <li><a href="#">Windows</a></li>
+            <li><a href="#">Surface</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Microsoft Search</a></li>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <div class="info-box">
+            <h2>Discover the Latest Microsoft Innovations</h2>
+            <p>Explore the latest technology to enhance your productivity.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+    
+    <section class="products">
+        <div class="product-card">
+            <img src="pro9.webp" alt="Product 1">
+            <h3>Surface Pro 9</h3>
+            <p>Powerful performance design.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="product-card">
+            <img src="xbox.png" alt="Product 2">
+            <h3>Xbox Series X</h3>
+            <p>Next-gen gaming at its finest.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="product-card">
+            <img src="365.png" alt="Product 3">
+            <h3>Microsoft 365</h3>
+            <p>Your productivity cloud.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="product-card">
+            <img src="11.png" alt="Product 4">
+            <h3>Windows 11</h3>
+            <p>Bringing you closer to what you love.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+</body>
+</html>

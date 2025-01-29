@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook - Log In or Sign Up</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                background-color: rgb(242,244,247);
+                font-family: sans-serif;
+            }
+            #fb{
+                padding-top: 205px;
+                padding-left: 265px;
+                float: left;
+                font-size: 50px;
+                font-weight: bold;
+                color: rgb(8,102,255);
+            }
+            p{
+                font-size: 28px;
+                margin-top: 13px;
+            }
+            #login{
+                padding: 15px;
+                display: inline-block;
+                background-color: white;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 8px;
+                margin-top: 113px;
+                margin-left: 120px;
+                text-align: center;
+            }
+            .inp{
+                padding: 16px 14px;
+                border: 1px;
+                border-radius: 5px;
+                width: 35ch;
+                box-shadow: 0px 0px 0px 1px rgb(223, 221, 221);
+                font-size: 17px;
+            }
+            .inp:focus {
+                box-shadow: 0px 0px 0px 2px rgb(231, 243, 255);
+                border: 1px solid rgb(8,102,255); 
+                caret-color: rgb(8,102,255);
+                outline: none; 
+            }
+            .inp:focus::placeholder{
+                color:rgb(190,195,201)
+            }
+            .inp::placeholder{
+                color:rgb(144,148,156);
+            }
+            #email-input{
+                margin-bottom: 15px;
+            }
+            #login-btn{
+                color:white;
+                background-color: rgb(8,102,255);
+                margin-top: 20px;
+                width: 362px;
+                font-size: 20px;
+                border: 0px;
+                border-radius: 5px;
+                padding: 12px;
+            }
+            #login-btn:hover{
+                background-color: rgb(24,119,242);
+            }
+            #forgot-pass{
+                text-align: center;
+                font-size: 14px;
+                margin: 15px;
+                color: rgb(8,102,255);
+            }
+            #forgot-pass:hover{
+                text-decoration: underline;
+            }
+            #newacc{
+                background-color: rgb(66,183,42);
+                color: white;
+                font-size: 17px;
+                border: 0px;
+                padding: 14px 16px;
+                border-radius: 5px;
+                margin: 7px;
+            }
+            #newacc:hover{
+                background-color: rgb(54,164,32);
+            }
+            #create-page{
+                margin-top: 35px;
+                margin-left: 620px;
+                font-size: 14px; 
+                width: 400px;
+                text-align: center;
+            }
+            #create-page strong:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fb">Facebook</div>
+
+        <div id="login">
+            <form action="">
+                <input id="email-input" class="inp" type="text" placeholder="Email or Phone Number"
+                 required pattern="(^\d{10,15}$)|(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)">
+                <br>
+                <input class="inp" type="password" placeholder="Password" required>
+                <br>
+                <button id="login-btn" type="submit"><strong>Log In</strong></button>
+            </form>
+            <p id="forgot-pass">Forgot Password?</p>
+            <hr style="border: 0.5px solid rgba(234, 232, 232, 0.943); margin: 20px;">
+            <button id="newacc" type="submit"><strong>Create New Account</strong></button>
+        </div>
+        <p id="create-page"><strong>Create a Page</strong> for a celebrity, band, or business.</p>
+    </body>
+</html>

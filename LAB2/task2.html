@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 140vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box h1 {
+            font-family: 'Instagram Sans', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .box input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .box button {
+            width: 95%;
+            background-color: #0095f6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .box button:hover {
+            background-color: #0073cc;
+        }
+
+        .box p {
+            font-size: 14px;
+            color: #8e8e8e;
+            margin: 10px 0;
+        }
+
+        .box a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+
+        .box a:hover {
+            text-decoration: underline;
+        }
+
+        .download {
+            text-align: center;
+        }
+
+        .download p {
+            font-size: 14px;
+            font-weight: 300;
+            color: #000204;
+            margin-bottom: 10px;
+        }
+
+        .download a {
+            font-size: 16px;
+            font-weight: 300;
+            color: #0073cc;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .download a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Instagram</h1>
+            <form>
+                <input type="text" placeholder="Phone number, username, or email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <p>OR</p>
+            <p><a href="#">Log in with Facebook</a></p>
+            <p><a href="#">Forgot password?</a></p>
+        </div>
+
+        <div class="box">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+
+        <div class="download">
+            <p>Get the app</p>
+            <a href="#">Google Play</a>
+            <a href="#">App Store</a>
+        </div>
+    </div>
+</body>
+</html>
