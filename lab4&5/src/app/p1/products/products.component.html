@@ -1,0 +1,45 @@
+<div>
+  <div class="top">
+    <img src="logo.png" alt="Organic Store Logo" class="logo" />
+    <h1 class="title">Organic Store</h1>
+  </div>
+  
+  <div class="category-selector">
+    <input
+      type="text"
+      placeholder="🔍 Search product..."
+      [(ngModel)]="searchQuery"
+      (input)="filterCategories()"
+    />
+    <select id="category" [(ngModel)]="selected" (change)="getFilteredProducts()">
+      <option *ngFor="let category of filteredCategories" [value]="category">
+        {{ category }}
+      </option>
+    </select>
+    <button class="clear-button" (click)="clearFilters()">Clear Filters</button>
+  </div>
+
+  <div class="products-container">
+    <div *ngFor="let product of getFilteredProducts()" class="product-card">
+      <img class="product-image" [src]="product.image" alt="{{ product.name }}" />
+      <div class="product-info">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>⭐ {{ product.rating }}</p>
+        <p>❤️ {{ product.likes }}</p>
+
+        <a [href]="product.link" target="_blank">Learn More</a>
+
+        <div class="button-group">
+          <button (click)="likeProduct(product.id)">👍 Like</button>
+          <button (click)="removeProduct(product.id)">🗑 Remove</button>
+        </div>
+
+        <div class="share-buttons">
+          <button (click)="shareProduct(product.link, 'whatsapp')">WhatsApp</button>
+          <button (click)="shareProduct(product.link, 'telegram')">Telegram</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
